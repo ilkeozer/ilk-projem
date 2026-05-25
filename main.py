@@ -24,3 +24,8 @@ odeme1.odeme_tamamla()
 
 print("Ödeme işlemi tamamlandı.")
 print("Güncel Ödeme Durumu:", odeme1.durum())
+
+yonetim = SiparisYonetimi()
+yonetim.siparis_ekle(siparis1)
+
+print("Toplam Ciro:", yonetim.toplam_ciro(), "TL")
