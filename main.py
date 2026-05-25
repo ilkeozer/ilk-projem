@@ -1,15 +1,9 @@
-from models.musteri import Musteri
-from models.urun import Urun
-from models.siparis import Siparis
+from models.kargo import Kargo
 
-musteri1 = Musteri("İlke", "ilke@gmail.com", 1001)
+kargo1 = Kargo()
 
-urun1 = Urun("Kulaklık", 1500, 10)
-urun2 = Urun("Mouse", 800, 5)
+print("Kargo Durumu:", kargo1.durum())
 
-siparis1 = Siparis(musteri1)
+kargo1.durum_guncelle("Kargoda")
 
-siparis1.urun_ekle(urun1)
-siparis1.urun_ekle(urun2)
-
-print(siparis1.siparis_bilgisi())
+print("Yeni Durum:", kargo1.durum())
