@@ -1,9 +1,8 @@
-from models.kargo import Kargo
+from models.odeme import Odeme
+odeme1 = Odeme("Kredi Kartı", 13500)
 
-kargo1 = Kargo()
+print(odeme1.bilgileri_goster())
 
-print("Kargo Durumu:", kargo1.durum())
+odeme1.odeme_tamamla()
 
-kargo1.durum_guncelle("Kargoda")
-
-print("Yeni Durum:", kargo1.durum())
+print("Yeni Ödeme Durumu:", odeme1.durum())
